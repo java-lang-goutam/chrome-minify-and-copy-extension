@@ -1,0 +1,37 @@
+{
+    "name": "Mini Pie",
+    "description": "Shortens and copy current url",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background":
+    {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "action":
+    {
+        "default_popup": "popup.html",
+        "default_icon":
+        {
+            "16": "/images/ty16.png",
+            "32": "/images/ty32.png",
+            "48": "/images/ty48.png",
+            "128": "/images/ty128.png"
+        }
+    },
+    "icons":
+    {
+        "16": "/images/ty16.png",
+        "32": "/images/ty32.png",
+        "48": "/images/ty48.png",
+        "128": "/images/ty128.png"
+    },
+    "host_permissions": [
+        "http://*/",
+        "https://*/"
+    ],
+    "options_page": "options.html"
+}
